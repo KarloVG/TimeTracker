@@ -1,0 +1,35 @@
+.table {
+    width: 80%;
+    padding: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.add-button{
+    margin: 0 8px 8px 0;
+}
+
+.edit-button{
+    margin-right: 10px;
+}
+
+.mat-column-select{
+    flex: 0 0 4%;
+    // padding-right: 0px;
+}
+

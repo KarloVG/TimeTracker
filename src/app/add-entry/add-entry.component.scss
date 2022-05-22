@@ -1,0 +1,19 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+.form {
+    align-self: center;
+    margin: 100px;
+}
+
+.mat-form-field {
+  width: 250px !important;
+}
+
+.mat-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+}
