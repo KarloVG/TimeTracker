@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  // eslint-disable-next-line
   ngOnInit(): void {
   }
 

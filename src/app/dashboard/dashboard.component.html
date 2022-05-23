@@ -13,7 +13,8 @@
 
       <ng-container matColumnDef="date">
         <mat-header-cell mat-header-cell *matHeaderCellDef> Date </mat-header-cell>
-        <mat-cell *matCellDef="let element"> {{element.attributes.date | date: 'dd.MM.yyyy'}} </mat-cell>>
+        <mat-cell *matCellDef="let element"> {{element.attributes.date | date: 'dd.MM.yyyy'}} 
+        </mat-cell>>
       </ng-container>
 
       <ng-container matColumnDef="time">
@@ -39,7 +40,7 @@
 
     <mat-paginator [pageSizeOptions]="[9, 5]"
                    showFirstLastButtons 
-                   aria-label="Select page of periodic elements">
+                   aria-label="Select page">
     </mat-paginator>
   </div>
 </div>

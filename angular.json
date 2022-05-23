@@ -105,9 +105,21 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "timeTracker"
+  "defaultProject": "timeTracker",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

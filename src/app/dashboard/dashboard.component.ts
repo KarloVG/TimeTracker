@@ -32,7 +32,6 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
   
 
   ngOnInit(): void {
-    console.log(this.today)
     this.getTimeEntries();
   }
 
@@ -43,7 +42,7 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
   getTimeEntries() {
     this.isLoading$.next(true);
     this.subscription = this.dashboardService.getTimeEntries().subscribe(data => {
-      this.dataSource.data = data.data.filter(data => data.date === this.today);
+      this.dataSource.data = data.data;
       this.isLoading$.next(false)
     })
   }

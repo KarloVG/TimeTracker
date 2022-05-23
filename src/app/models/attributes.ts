@@ -1,6 +1,9 @@
 export interface IAttributes {
-    date: string;
+    firstName?: string;
+    lastName?: string;
+    name?: string;
     time?: string;
+    date: string;
     note: string;
   }
   

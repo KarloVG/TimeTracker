@@ -1,6 +1,10 @@
 import { IAttributes } from "./attributes";
 
 export interface ITable {
-  data: IAttributes[];
-  id?: string;
+  data: IData[]
+}
+
+interface IData {
+  attributes: IAttributes;
+  id: string;
 }

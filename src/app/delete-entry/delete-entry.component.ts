@@ -15,11 +15,11 @@ export class DeleteEntryComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public row: string
   ) { }
 
+  // eslint-disable-next-line
   ngOnInit(): void {
   }
 
   deleteEntry(id: string){
-    console.log(id)
     this.deleteEntryService.deleteEntry(id).subscribe(() => this.dialog.close());
 }
 
